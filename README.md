@@ -10,7 +10,7 @@ cascading based gui module for nekoland lua scripting inspired from css
 
 ## Idea
 
-Separation of logic and style code in Nekoland
+Separation between logic and style code in Nekoland
 
 - Generate style sheet just as table
 
