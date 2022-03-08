@@ -1,10 +1,7 @@
 --style sheet 사용예제
-local ui = require("ui")
+local myStyle = {}
 
--- Case 1
-local myStyle1 = ui()
-
-myStyle1 {
+myStyle.case1 = {
     anchor = 1,
     height = 100,
     width = 100,
@@ -14,9 +11,7 @@ myStyle1 {
     pivotY = .5
 }
 
--- Case 2
-local myStyle2 =
-    ui {
+myStyle.case2 = {
     anchor = 1,
     height = 100,
     width = 100,
@@ -26,28 +21,4 @@ local myStyle2 =
     pivotY = .5
 }
 
--- Case 3
-ui.myStyle3 = {
-    anchor = 1,
-    height = 100,
-    width = 100,
-    x = 100,
-    y = 100,
-    pivotX = .5,
-    pivotY = .5
-}
-
--- return ui
-
--- Case 4
-local myStyle4 = {
-    anchor = 1,
-    height = 100,
-    width = 100,
-    x = 100,
-    y = 100,
-    pivotX = .5,
-    pivotY = .5
-}
-
-return myStyle4
+return myStyle
