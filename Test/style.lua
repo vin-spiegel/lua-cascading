@@ -1,24 +1,22 @@
---style sheet 사용예제
-local myStyle = {}
+-- Style Sheet Test
+local ui = require("ui-style.init")
 
-myStyle.case1 = {
-    anchor = 1,
-    height = 100,
+local test =
+    ui.Panel {
     width = 100,
-    x = 100,
-    y = 100,
-    pivotX = .5,
-    pivotY = .5
+    height = 100,
+    color = Color(255, 0, 0)
 }
 
-myStyle.case2 = {
-    anchor = 1,
-    height = 100,
-    width = 100,
-    x = 100,
-    y = 100,
-    pivotX = .5,
-    pivotY = .5
+local test2 =
+    ui.Button {
+    color = Color(0, 255, 0)
 }
 
-return myStyle
+function testCode(tbl)
+    print("width:", tbl.width)
+    print("height:", tbl.height)
+end
+
+-- testCode(test)
+-- testCode(test2)
