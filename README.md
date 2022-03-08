@@ -4,10 +4,31 @@ cascading based gui module for nekoland lua scripting inspired from css
 
 ## to do
 
-- [ ] cascading
+- [ ] getter & setter
+- [ ] cascading value
 - [ ] receive and render from table value for Nekoland control object
+- [ ] extends & mix in
 
-## Idea
+## Concept
+
+- Seperate between logic and style
+
+  ```lua
+    local ui = require("ui")
+
+    local myStyle = {
+      width = Client.width/3,
+      height = Client.height/3
+    }
+
+    local myPanel = ui.Panel{
+      selector = myStyle
+    }
+
+
+    -- local myPanel = ui.Panel()
+    -- myPanel.selector = myStyle
+  ```
 
 - Generate style sheet just as table
 
@@ -49,3 +70,7 @@ cascading based gui module for nekoland lua scripting inspired from css
     parent = modal
   }
   ```
+
+## License
+
+[MIT License](LICENSE)
