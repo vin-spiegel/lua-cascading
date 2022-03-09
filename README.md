@@ -6,7 +6,7 @@ cascading based gui module for nekoland lua scripting inspired from css
 
 - [ ] getter & setter
 - [ ] cascading value
-- [ ] receive and render from table value for Nekoland control object
+- [ ] receive and render from table value
 - [ ] extends & mix in
 
 ## Concept
